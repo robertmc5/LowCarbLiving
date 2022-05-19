@@ -1,0 +1,169 @@
+/* Universal Style*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: cornsilk;
+  height: 6rem;
+  font-size: 0;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#emblem {
+  background-image: url("../images/avocado-emblem.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+header h3 {
+  display: inline-flex;
+  font-family: 'Caveat', cursive;
+  font-size: 3.25rem;
+  color: rebeccapurple;
+  font-weight: 400;
+  padding-left: 1.5rem;
+  padding-top: 0.25rem;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 750px) {
+  div#emblem {
+    height: 50px;
+    width: 50px;
+  }
+  header h3 {
+    font-size: 2.17rem;
+    padding-left: 1rem;
+  }
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-self: flex-end;
+}
+
+header li {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    height: 4rem;
+  }
+  div#emblem {
+    height: 35px;
+    width: 35px;
+  }
+  header h3 {
+    font-size: 1.52rem;
+    padding-left: 0.75rem;
+    padding-top: 0.19rem;
+  }
+  header li {
+    font-size: 0.8125rem;
+  }
+}
+
+header li a {
+  color: rebeccapurple;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+
+/* Exercise Section */
+#exercise {
+  background-image: url("../images/barbells-resize.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0 20% 0;
+}
+
+#exercise h2 {
+  background-color: rebeccapurple;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: oblique;
+  color: white;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+#exercise p {
+  background-color: cornsilk;
+  padding: 3% 3% 3% 3%;
+  border-radius: 1rem;
+  line-height: 1.75;
+  font-style: italic;
+  margin: 10% 5% 0 30%;
+}
+
+@media only screen and (max-width: 480px) {
+  #exercise h2 {
+    padding: 2.25rem 1.5rem;
+  }
+  #exercise {
+    padding-bottom: 15%;
+  }
+  #exercise p {
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  #exercise h2 {
+    padding: 1.5rem;
+  }
+  #exercise p {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: rebeccapurple;
+  color: cornsilk;
+  text-align: center;
+  line-height: 2rem;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 450px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+
+footer #co-name {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}

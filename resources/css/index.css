@@ -1,1 +1,325 @@
+/* Universal Style*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  font-size: 16px;
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-color: cornsilk;
+  height: 6rem;
+  font-size: 0;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#emblem {
+  background-image: url("../images/avocado-emblem.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+header h3 {
+  display: inline-block;
+  font-family: 'Caveat', cursive;
+  font-size: 3.25rem;
+  color: rebeccapurple;
+  font-weight: 400;
+  padding-left: 1.5rem;
+  padding-top: 0.25rem;
+  vertical-align: top;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-self: flex-end;
+}
+
+header li {
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  div#emblem {
+    height: 50px;
+    width: 50px;
+  }
+  header h3 {
+    font-size: 2.17rem;
+    padding-left: 1rem;
+  }
+  header li#contact {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  header li#smaller-screen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header li#larger-screen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  header {
+    height: 4rem;
+  }
+  div#emblem {
+    height: 35px;
+    width: 35px;
+  }
+  header h3 {
+    font-size: 1.52rem;
+    padding-left: 0.75rem;
+    padding-top: 0.19rem;
+  }
+  header li {
+    font-size: 0.8125rem;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  header {
+    padding: 0 1.25rem;
+  }
+  header ul {
+    flex-direction: column-reverse;
+    align-self: flex-end;
+    padding: 0;
+  }
+}
+
+header li a {
+  color: rebeccapurple;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+
+/* Splash Section */
+#splash {
+  background-image: url("../images/kitchen-counter-resize.jpg");
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-y: 72%;
+  height: 31.25rem;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#splash h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#splash h2 {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #splash h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+  #splash h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Questions Section */
+section#questions {
+  background-image: url("../images/lemons-cropped.jpg");
+  background-size: cover;
+  padding: 1.5rem;
+}
+
+#questions h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: oblique;
+  color: rebeccapurple;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+.panel-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.panel {
+  width: 15rem;
+  height: 11.25rem;
+  margin: 2.5rem;
+  border: 2px solid rebeccapurple;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #questions h2 {
+    padding-top: 0;
+  }
+  .panel {
+    margin: 1.5rem;
+  }
+}
+
+.panel:hover {
+  border: 2px solid red;
+  box-shadow: 1px 1px 1px red, -1px -1px 1px red;
+}
+
+.panel h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 3px 3px 2px black;
+}
+
+#eating {
+  background-image: url("../images/pretty-shrimp-pan-resize.jpg");
+}
+
+#low-carb {
+  background-image: url("../images/healthy-bowl-resize.jpg");
+}
+
+#high-carb {
+  background-image: url("../images/orange-soda-resize.jpg");
+}
+
+#fat {
+  background-image: url("../images/olive-oil-resize.jpg");
+  background-position-y: 25%;
+}
+
+#exercise {
+  background-image: url("../images/stair-stepping-resize.jpg");
+}
+
+/* Mission Section */
+#mission {
+  height: 30rem;
+  background-color: rebeccapurple;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mission h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: oblique;
+  color: white;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+#mission p {
+  background-color: cornsilk;
+  padding: 2% 2% 2% 20%;
+  margin-right: 3%;
+  margin-left: 5%;
+  border-radius: 1rem;
+  background-image: url("../images/loudspeaker-flipped-120px.png");
+  background-repeat: no-repeat;
+  line-height: 1.75;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  #mission {
+    display: none;
+  }
+}
+
+/* Quote Section */
+#quote {
+  background-color: lightgray;
+  color: black;
+  line-height: 3rem;
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#quote p {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  #quote {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: rebeccapurple;
+  color: cornsilk;
+  text-align: center;
+  line-height: 2rem;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 450px) {
+  #quote {
+    line-height: 2rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+
+footer #co-name {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
